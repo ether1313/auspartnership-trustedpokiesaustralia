@@ -93,7 +93,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Mrbean9 Casino is a great platform for Australian players who want a fun and reliable place to play. With its solid game selection, helpful support team and rewarding promotions, it's easy to see why so many choose it. Whether you're a casual gamer or someone looking to earn through the affiliate program, Mrbean9 has something for everyone."
     ],
     seoDescription: "Mrbean9 Casino guide with affiliate program, welcome bonus, e-wallet options, top features and FAQs for Australian players.",
-    seoKeywords: "Mrbean9 Casino, Mrbean9 Australia, Mrbean9 login, Mrbean9 register, Mrbean9 affiliate, Mrbean9 welcome bonus"
+    seoKeywords: "Mrbean9,Mrbean9 Casino, Mrbean9 Australia, Mrbean9 login, Mrbean9 register, Mrbean9 affiliate, Mrbean9 welcome bonus"
   },
   pkm9: {
     heroTitle: "PKM9 - Best E-wallet Casino and Online Entertainment in Asia",
@@ -145,7 +145,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       }
     ],
     seoDescription: "PKM9 e-wallet casino page with app download, real-money gameplay, register/login details and trusted entertainment features in Asia and Australia.",
-    seoKeywords: "PKM9, pokemon9, PKM9 login, pokemon9 login, PKM9 register, pokemon9 casino"
+    seoKeywords: "PKM9, pokemon9, pkm9, pkm9 register, pkm9 welcome bonus, PKM9 login, pokemon9 login, PKM9 register, pokemon9 casino"
   },
   gucci9: {
     heroTitle: "Gucci9 - Official Casino Games in Auspartnership.net",
@@ -220,7 +220,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Gucci9 brings the best online casino experience to Australia and South Asia. With easy registration, fast downloads and exciting games, it's the perfect place for casino lovers."
     ],
     seoDescription: "Gucci9 official casino page with app download, e-wallet payments, bonuses, customer support, FAQs and Australia/South Asia coverage.",
-    seoKeywords: "Gucci9 official, Gucci9 casino, Gucci9 app, Gucci9 login, Gucci9 register, Gucci9 bonuses"
+    seoKeywords: "Gucci9, Gucci9 official, Gucci9 casino, Gucci9 app, Gucci9 login, Gucci9 register, Gucci9 bonuses"
   },
   ipay9: {
     heroTitle: "iPAY9 Ewallet Casino - Your Gateway to Trusted Online Entertainment in Australia and Asia",
@@ -290,7 +290,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       }
     ],
     seoDescription: "iPAY9 Ewallet casino page with Australia and Asia coverage, online slots, live casino, trusted wallet services and FAQs.",
-    seoKeywords: "iPAY9 Ewallet, iPAY9 casino, iPAY9 login, iPAY9 Australia, iPAY9 live casino, iPAY9 online slot"
+    seoKeywords: "iPay9, iPAY9 Ewallet, iPAY9 casino, iPAY9 login, iPAY9 Australia, iPAY9 live casino, iPAY9 online slot"
   },
   me99: {
     heroTitle: "Exploring the Me99 E-Wallet and Online Casino Experience in Australia",
@@ -370,7 +370,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Me99 is a growing platform for online gaming and digital payments in Australia. With its easy-to-use E-Wallet, real money games and mobile app, users can enjoy casino games and manage funds in one place. Always play responsibly and understand the laws in your area."
     ],
     seoDescription: "Me99 E-Wallet and online casino details in Australia, including app flow, real-money games, wallet usage, features and FAQs.",
-    seoKeywords: "Me99 E-Wallet, Me99 casino, Me99 login, Me99 download, Me99 real money games, Me99 Australia"
+    seoKeywords: "Me99, Me99 E-Wallet, Me99 casino, Me99 login, Me99 download, Me99 real money games, Me99 Australia"
   },
   bybid9: {
     heroTitle: "Bybid9 - Best Online Entertainment in Asia and Australia",
@@ -464,7 +464,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Bybid9 stands out as a reliable online casino that offers great entertainment for players in Asia and Australia. Whether you're into slots, live casino games, or just want a safe place to play with real money, Bybid9 has it all. With easy login, fast e-wallet payments and exciting game choices, it's a top choice for many."
     ],
     seoDescription: "Bybid9 online casino page with login/register flow, e-wallet real-money gaming, slots, live dealer games, and FAQs.",
-    seoKeywords: "Bybid9, Bybid9 login, Bybid9 register, Bybid9 slots, Bybid9 live casino, Bybid9 ewallet"
+    seoKeywords: "Bybid9, Bybid9 login, Bybid9 register, Bybid9 slots, Bybid9 live casino, Bybid9 ewallet, Bybid9 bonus"
   },
   rolex9: {
     heroTitle: "Rolex9 E-wallet Casino: Your Top Choice for Online Gaming in Australia",
@@ -532,7 +532,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Join Rolex9 E-wallet Casino today at auspartnership.net and enjoy top online gaming in Australia!"
     ],
     seoDescription: "Rolex9 e-wallet casino page with login/register details, slots, live dealer gaming, live blackjack and real-money play in Australia.",
-    seoKeywords: "Rolex9 casino, Rolex9 login, Rolex9 register, Rolex9 live dealer, Rolex9 live blackjack, Rolex9 e-wallet"
+    seoKeywords: "Rolex9, Rolex9 casino, Rolex9 login, Rolex9 register, Rolex9 live dealer, Rolex9 live blackjack, Rolex9 e-wallet"
   },
   kingbet9: {
     heroTitle: "Kingbet9 E-wallet Casino: Australia's Biggest Online Entertainment",
@@ -597,7 +597,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Join Kingbet9 E-wallet Casino at auspartnership.net and enjoy Australia's top online gaming experience today!"
     ],
     seoDescription: "Kingbet9 e-wallet casino page with register/login, slots, poker, live games, mobile casino advantages and Australian FAQs.",
-    seoKeywords: "Kingbet9 E-wallet, Kingbet9 login Australia, Kingbet9 register, Kingbet slots, Kingbet mobile casino, Kingbet live casino"
+    seoKeywords: "Kingbet9, Kingbet9 E-wallet, Kingbet9 login Australia, Kingbet9 register, Kingbet slots, Kingbet mobile casino, Kingbet live casino"
   },
   bigpay77: {
     heroTitle: "Bigpay77 E-wallet Casino: Australia's Leading Online Entertainment",
@@ -655,10 +655,10 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Join Bigpay77 E-wallet Casino at auspartnership.net or Bigpay77.net and start your gaming adventure today!"
     ],
     seoDescription: "Bigpay77 e-wallet casino page with pokies, mobile casino, real-money gaming, instant-withdrawal messaging and FAQs.",
-    seoKeywords: "Bigpay77 Ewallet, Bigpay77 login, Bigpay77 register, Bigpay77 pokies AUS, Bigpay77 mobile casino, Bigpay77 real money"
+    seoKeywords: "Bigpay77, bp77, bp77 casino, Bigpay77 Ewallet, Bigpay77 login, Bigpay77 register, Bigpay77 pokies AUS, Bigpay77 mobile casino, Bigpay77 real money"
   },
   queen13: {
-    heroTitle: "Play Smart with Queen13: Top E-Wallet Casino in Australia (2026-26)",
+    heroTitle: "Play Smart with Queen13: Top E-Wallet Casino in Australia (2026)",
     intro: [
       "Queen13 has become one of Asia's most popular names in online entertainment. It offers a secure and convenient way to play casino games using e-wallets. With its strong presence now in Australia, Queen13 brings top-quality online pokies, fast payouts and user-friendly features."
     ],
@@ -677,7 +677,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
         ]
       },
       {
-        title: "Best E-Wallet Pokies for 2026-26",
+        title: "Best E-Wallet Pokies for 2026",
         paragraphs: [
           "Pokies remain the most played games in Australia. Queen13 offers a wide range of pokies from top developers like Microgaming and Pragmatic Play.",
           "During a three-week test of various platforms, Queen13 stood out for quick game loading, stable connections and smooth wallet integration. It also tracks your game history clearly, which helps players manage their spending better."
@@ -730,11 +730,11 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       }
     ],
     conclusion: [
-      "Queen13 is setting a new standard for e-wallet casinos in Australia. With instant payouts, smooth user experience and a focus on AUD compatibility, it offers something many platforms still lack. Whether you're a casual pokies player or looking for an efficient platform to manage your bets, Aus Queen13 Casino provides a solid choice for 2026-26.",
+      "Queen13 is setting a new standard for e-wallet casinos in Australia. With instant payouts, smooth user experience and a focus on AUD compatibility, it offers something many platforms still lack. Whether you're a casual pokies player or looking for an efficient platform to manage your bets, Aus Queen13 Casino provides a solid choice for 2026.",
       "Its growing popularity across Asia and entry into the Australian market mark it as one to watch and play."
     ],
-    seoDescription: "Queen13 e-wallet casino page for Australia 2026-26 with instant payout details, AUD wallet support, login steps, pokies and FAQs.",
-    seoKeywords: "Queen13 casino, Queen13 login Australia, Queen13 e-wallet, Queen13 instant payout, Queen13 pokies, Queen13 2026"
+    seoDescription: "Queen13 e-wallet casino page for Australia 2026 with instant payout details, AUD wallet support, login steps, pokies and FAQs.",
+    seoKeywords: "Queen13, Queen13 casino, Queen13 login Australia, Queen13 e-wallet, Queen13 instant payout, Queen13 pokies, Queen13 2026"
   },
   winnie777: {
     heroTitle: "Winnie777 Casino Australia: Low Entry, High Rewards, and Daily Bonus Fun",
@@ -788,7 +788,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       "Winnie777 combines a fun themed style with practical value: low entry, frequent bonuses, and consistent rewards. For Australian players who want flexible, bonus-rich gaming, it is a strong and accessible option."
     ],
     seoDescription: "Winnie777 casino page covering low-entry gameplay, frequent bonuses, reward system highlights, and mobile-friendly access for Australia.",
-    seoKeywords: "Winnie777 casino, Winnie777 login, Winnie777 register, Winnie777 bonus, Winnie777 rewards, Winnie777 Australia"
+    seoKeywords: "Winnie777, Winnie777 casino, Winnie777 login, Winnie777 register, Winnie777 bonus, Winnie777 rewards, Winnie777 Australia"
   },
   micky9: {
     heroTitle: "Micky9 Casino Australia: Mickey Theme, Birthday Rewards, and Task Bonuses",
