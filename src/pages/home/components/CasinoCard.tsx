@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 interface Casino {
   id: number;
   name: string;
@@ -16,13 +18,13 @@ export default function CasinoCard({ casino }: CasinoCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-md border border-[#d7eef2] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
       <div className="bg-[#EBFFED] p-3 md:p-4 flex justify-center items-center h-[95px] md:h-[150px]">
-        <a href={casino.infoUrl} className="block">
+        <Link to={casino.infoUrl} className="block">
           <img 
             src={casino.logo} 
             alt={casino.name} 
             className="max-h-16 md:max-h-24 w-auto object-contain animate-bounce-scale drop-shadow-lg"
           />
-        </a>
+        </Link>
       </div>
       
       <div className="p-3 md:p-4 bg-white h-[72px] md:h-[250px] flex flex-col">
