@@ -145,7 +145,7 @@ export const brandDetailsBySlug: Record<string, BrandDetailContent> = {
       }
     ],
     seoDescription: "PKM9 e-wallet casino page with app download, real-money gameplay, register/login details and trusted entertainment features in Asia and Australia.",
-    seoKeywords: "pkm9, pokemon13, pokemon13 login, pokemon13 register, pokemon13 app apk, pokemon13 casino"
+    seoKeywords: "PKM9, pokemon9, PKM9 login, pokemon9 login, PKM9 register, pokemon9 casino"
   },
   gucci9: {
     heroTitle: "Gucci9 - Official Casino Games in Auspartnership.net",

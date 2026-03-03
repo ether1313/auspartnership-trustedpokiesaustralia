@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createJiti } from 'jiti';
@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const outDir = path.join(projectRoot, 'out');
 const baseHtmlPath = path.join(outDir, 'index.html');
+const siteOrigin = 'https://www.auspartnership.net';
 
 const jiti = createJiti(import.meta.url);
 const { brandDetailsBySlug } = jiti(path.join(projectRoot, 'src/mocks/brandDetails.ts'));
@@ -49,6 +50,22 @@ function upsertCanonical(html, href) {
   return html.replace('</head>', `  ${tag}\n</head>`);
 }
 
+function resolveAssetUrl(fileName) {
+  return `${siteOrigin}/assets/${fileName}`;
+}
+
+function findFirstAsset(assets, prefix) {
+  return assets.find((asset) => asset.startsWith(prefix) && asset.endsWith('.png'));
+}
+
+function upsertOptionalImageMeta(html, imageUrl) {
+  if (!imageUrl) return html;
+  let nextHtml = html;
+  nextHtml = upsertMeta(nextHtml, 'property', 'og:image', imageUrl);
+  nextHtml = upsertMeta(nextHtml, 'name', 'twitter:image', imageUrl);
+  return nextHtml;
+}
+
 function buildCoreContent(slug, detail) {
   const intro = (detail.intro ?? []).slice(0, 2);
   const sectionParagraphs = (detail.sections ?? [])
@@ -70,10 +87,23 @@ ${body}
 
 async function main() {
   const baseHtml = await readFile(baseHtmlPath, 'utf8');
+  const assetsDir = path.join(outDir, 'assets');
+  const assets = await readdir(assetsDir);
+  const homeSocialAsset = findFirstAsset(assets, 'tpapartnership-');
+  const homeSocialImageUrl = homeSocialAsset ? resolveAssetUrl(homeSocialAsset) : '';
+  const homeCanonical = `${siteOrigin}/`;
+
+  let optimizedHomeHtml = baseHtml;
+  optimizedHomeHtml = upsertMeta(optimizedHomeHtml, 'property', 'og:url', homeCanonical);
+  optimizedHomeHtml = upsertCanonical(optimizedHomeHtml, homeCanonical);
+  optimizedHomeHtml = upsertOptionalImageMeta(optimizedHomeHtml, homeSocialImageUrl);
+  await writeFile(baseHtmlPath, optimizedHomeHtml, 'utf8');
 
   for (const [slug, detail] of Object.entries(brandDetailsBySlug)) {
-    const brandUrl = `https://www.auspartnership.net/brands/${slug}`;
-    let html = baseHtml;
+    const brandUrl = `${siteOrigin}/brands/${slug}`;
+    const brandImageAsset = findFirstAsset(assets, `${slug}-cover-`);
+    const brandImageUrl = brandImageAsset ? resolveAssetUrl(brandImageAsset) : homeSocialImageUrl;
+    let html = optimizedHomeHtml;
 
     html = setTitle(html, detail.heroTitle);
     html = upsertMeta(html, 'name', 'description', detail.seoDescription);
@@ -81,6 +111,7 @@ async function main() {
     html = upsertMeta(html, 'property', 'og:title', detail.heroTitle);
     html = upsertMeta(html, 'property', 'og:description', detail.seoDescription);
     html = upsertMeta(html, 'property', 'og:url', brandUrl);
+    html = upsertOptionalImageMeta(html, brandImageUrl);
     html = upsertMeta(html, 'name', 'twitter:title', detail.heroTitle);
     html = upsertMeta(html, 'name', 'twitter:description', detail.seoDescription);
     html = upsertCanonical(html, brandUrl);
