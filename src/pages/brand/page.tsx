@@ -32,6 +32,10 @@ export default function BrandDetailPage() {
   const detail = slug ? brandDetailsBySlug[slug] : undefined;
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [slug]);
+
+  useEffect(() => {
     if (!casino) return;
 
     const title =
@@ -43,6 +47,7 @@ export default function BrandDetailPage() {
       detail?.seoKeywords ??
       `${casino.name}, ${casino.name} login, ${casino.name} register, ${casino.name} casino, Australia online casino, trusted pokies australia`;
     const canonicalUrl = window.location.href;
+    const socialImage = new URL(casino.coverImage, window.location.origin).href;
 
     document.title = title;
     upsertMeta('name', 'description', description);
@@ -52,9 +57,11 @@ export default function BrandDetailPage() {
     upsertMeta('property', 'og:type', 'website');
     upsertMeta('property', 'og:url', canonicalUrl);
     upsertMeta('property', 'og:site_name', 'Trusted Pokies Australia');
+    upsertMeta('property', 'og:image', socialImage);
     upsertMeta('name', 'twitter:card', 'summary_large_image');
     upsertMeta('name', 'twitter:title', title);
     upsertMeta('name', 'twitter:description', description);
+    upsertMeta('name', 'twitter:image', socialImage);
     upsertCanonical(canonicalUrl);
   }, [casino, detail]);
 
