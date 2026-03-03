@@ -27,6 +27,17 @@ import winnie777CoverImage from '../assets/brand-covers/winnie777-cover.png';
 
 export const casinoData = [
   {
+    id: 13,
+    name: 'Ace96au',
+    slug: 'ace96au',
+    logo: ace96auLogo,
+    coverImage: ace96auCoverImage,
+    loginUrl: 'https://ace96au.com/RFTPAAASEO',
+    registerUrl: 'https://ace96au.com/RFTPAAASEO',
+    infoUrl: '/brands/ace96au',
+    description: 'Ace96au is in Grand Opening, bringing a lively casino atmosphere with a broad lineup of slot games and table action. New members can enjoy generous registration bonuses, newcomer-friendly deals, and plenty of rewards from day one. With smooth navigation and exciting promotions, Ace96au is a strong choice for players who want a fun and rewarding start.'
+  },
+  {
     id: 1,
     name: 'MrBean9',
     slug: 'mrbean9',
@@ -157,16 +168,5 @@ export const casinoData = [
     registerUrl: 'https://micky9.net/RFTPPASEO',
     infoUrl: '/brands/micky9',
     description: 'Micky9 offers a friendly starting point for new users with low deposit thresholds and straightforward withdrawal conditions. Beyond gaming, it also highlights a referral and agent pathway for users interested in earning through community growth. This combination of accessibility and earning potential makes micky9 appealing to both casual players and active promoters.'
-  },
-  {
-    id: 13,
-    name: 'Ace96au',
-    slug: 'ace96au',
-    logo: ace96auLogo,
-    coverImage: ace96auCoverImage,
-    loginUrl: 'https://ace96au.com/RFTPAAASEO',
-    registerUrl: 'https://ace96au.com/RFTPAAASEO',
-    infoUrl: '/brands/ace96au',
-    description: 'Ace96au is in Grand Opening, bringing a lively casino atmosphere with a broad lineup of slot games and table action. New members can enjoy generous registration bonuses, newcomer-friendly deals, and plenty of rewards from day one. With smooth navigation and exciting promotions, Ace96au is a strong choice for players who want a fun and rewarding start.'
   }
 ];

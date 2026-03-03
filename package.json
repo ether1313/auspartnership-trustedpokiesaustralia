@@ -36,7 +36,7 @@
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "postbuild": "node scripts/generate-brand-pages.mjs",
+    "postbuild": "node scripts/generate-brand-pages.mjs && node scripts/generate-sitemap-robots.mjs",
     "preview": "vite preview",
     "type-check": "tsc --noEmit --project tsconfig.app.json"
   },
