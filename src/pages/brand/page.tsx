@@ -16,6 +16,16 @@ function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
   tag.setAttribute('content', content);
 }
 
+function upsertCanonical(url: string) {
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    document.head.appendChild(link);
+  }
+  link.setAttribute('href', url);
+}
+
 export default function BrandDetailPage() {
   const { slug } = useParams();
   const casino = casinoData.find((item) => item.slug === slug);
@@ -24,13 +34,15 @@ export default function BrandDetailPage() {
   useEffect(() => {
     if (!casino) return;
 
-    const title = `${casino.name} Casino Australia | Trusted Pokies Australia`;
+    const title =
+      detail?.heroTitle ?? `${casino.name} Casino Australia | Trusted Pokies Australia`;
     const description =
       detail?.seoDescription ??
       `${casino.name} brand page on Trusted Pokies Australia. Explore promotions, secure access, login and register links, and casino details for Australian players.`;
     const keywords =
       detail?.seoKeywords ??
       `${casino.name}, ${casino.name} login, ${casino.name} register, ${casino.name} casino, Australia online casino, trusted pokies australia`;
+    const canonicalUrl = window.location.href;
 
     document.title = title;
     upsertMeta('name', 'description', description);
@@ -38,6 +50,12 @@ export default function BrandDetailPage() {
     upsertMeta('property', 'og:title', title);
     upsertMeta('property', 'og:description', description);
     upsertMeta('property', 'og:type', 'website');
+    upsertMeta('property', 'og:url', canonicalUrl);
+    upsertMeta('property', 'og:site_name', 'Trusted Pokies Australia');
+    upsertMeta('name', 'twitter:card', 'summary_large_image');
+    upsertMeta('name', 'twitter:title', title);
+    upsertMeta('name', 'twitter:description', description);
+    upsertCanonical(canonicalUrl);
   }, [casino, detail]);
 
   if (!casino) return <NotFound />;
